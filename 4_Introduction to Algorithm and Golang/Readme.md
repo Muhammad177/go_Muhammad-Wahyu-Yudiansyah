@@ -1,0 +1,1 @@
+Materi hari pertama yakni mengenai Flowchart mengenai simbol dan kegunaannya,tools apa saja yang di butuhkan serta langkah-langkah instal kebutuhan untuk pendidikan

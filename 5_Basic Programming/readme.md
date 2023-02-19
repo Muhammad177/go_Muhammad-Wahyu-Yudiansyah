@@ -1,0 +1,1 @@
+Di hari kedua saya mendapatkan live session dan materi dasar Golang didalamnya meliputi operator,variable,cara menerapkan GO , dan yang terakhir melakukan convert dari string ke interger maupun sebaliknya
