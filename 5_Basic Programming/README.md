@@ -1,1 +1,2 @@
+(5) Basic Programming
 Pada materi basic programming saya mendapatkan materi tentang penganalan dasar golang,package fmt,tipe data,variable data,operator,looping.didalamnya kita diajarkan mempraktekan penggunaan materi yang diajarkan seperti bagaimana looping dan melakukan kondisi,membuat variable terdeskripsikan atau langsung memberi nilai,tipe data number string dan penggunaan operator untuk melakukan operasi bilangan.

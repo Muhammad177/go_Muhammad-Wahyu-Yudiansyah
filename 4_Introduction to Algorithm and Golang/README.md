@@ -1,1 +1,2 @@
+(4) Introduction to Algorithm and Golang
 Di modul ini materi yang di dadapatkan pertama adalah pengenalan apa itu algorithma , karakteristik algorithma,Flowchart,Pseudocode.Algorithma adalah suatu proses komputasi yang dilakukan secara sistematis untuk menyelesaikan suatu masalah.karakteristiknya memiliki batas,intruksi jelas,efektif dan efisien.Pseudocode adalah suatu gambaran kode program yang terstruktur.Flowchart adalah gambaran suatu proses dari program yang menghubungkan satu sama lain secara detail
