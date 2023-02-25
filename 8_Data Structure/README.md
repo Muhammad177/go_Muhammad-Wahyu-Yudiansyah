@@ -1,0 +1,3 @@
+8_Data Structure
+
+Materi ini menjelaskan penggunaan Array dari mulai jenis data,mengambil array,menambah array,terutama mencetak Array.Dilanjutkan Materi mengenai Slice yang dapat memanggil array sesuai dengan start dan batasnya menggabungkan array dapat dilakukan juga.Selanjutnya Map merupakan sebuah array yanh terdiri dari key dan value sehingga nilainya pasti sama dengan inputan key nya agar mudah di akses.Lalu Function didalamnya kita diajarkan mengenai function menggunakan paraneter agar lebih efisien.

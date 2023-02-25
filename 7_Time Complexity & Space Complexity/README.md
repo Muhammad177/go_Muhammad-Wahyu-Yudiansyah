@@ -1,0 +1,3 @@
+7_Time Complexity & Space Complexity
+
+Pemahaman Mengenai Time complexity dan Space Complexity dimana pengertian berupa Waktu menjalankan program dan space atau ruang yang di butuhkan program.Di dalam Time complexity terdapat berbagai jenis seperti O(1),O(n),O(n^2),O(log n) dengan istilah sebutan constant,linear,quadratic time,logarithic time.Time complexity berbanding lurus dengan inputan.Sedangkan Space Complexity terdiri dari O(1),O(n) yakni sesuai dengan penampung variabel.

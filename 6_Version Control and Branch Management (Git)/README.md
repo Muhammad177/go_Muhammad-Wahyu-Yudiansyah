@@ -1,0 +1,3 @@
+6_Version Control and Branch Management (Git)
+
+Pengenalan terhadap istilah istilah yang ada pada git seperti apa itu versionering,Tools management git.Diantaranya ada VCS yang terdiri dari beberapa jenis di dalamnya yaitu Single User,Centralized,Distributed.Pemahaman Istilah-istilah terminal git seperti git status,git add, git commit,git branch dan masih banyak lagi.Setelah mengetahui Istilah dilakukan praktek untuk mengetahui fungsi istilah terserbut.
