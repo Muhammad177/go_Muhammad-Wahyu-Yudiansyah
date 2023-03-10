@@ -1,0 +1,3 @@
+11_Problem Solving Paradigm - Brute Force Greedy and Dynamic Programming
+
+Mempelajari mengenai pencarian nilai mulai dari Max dan Min , Divide And Conquer,BinarySearch dan masih banyak lagi di sertai penerapan contohnya,Dilanjutkan dengan materi gredy yang menyeselaikan masalah dengan optimal diberikan contoh pergantian coin.Lalu Dynamic Programing dengan penyelesaian fibonaci dengan cara top down dan bottom up
