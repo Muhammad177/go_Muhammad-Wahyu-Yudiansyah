@@ -1,0 +1,3 @@
+13_Clean Code
+
+adalah suatu istilah dari suatu code agar mudah di pahami oleh progremer lainnnya yang akan memegang project .didalamnya kita harus menerapkan code yang mudah di fahami,dicari,jelas efisien,konsisten,good function dan yang penting berikan komentar pada code yang sepertinya akan sulit untuk di fahami oleh progremer lain agar tidak menghambat kerja karena hanya mencari tahu function dari code tersebut ataupun variable tersebut.

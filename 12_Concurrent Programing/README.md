@@ -1,0 +1,3 @@
+12_Concurrent Programing
+
+Dalam materi Concurrent Programing terdapat big search dengan Sequential,Pararel,Concurrent yang membedakan adalah cara pencarian sehingga menghasilkan waktu paling efisien.Di berikan materi mengenai penggunaan Goroutine dengan Goroutines,Channels,Select.Goroutine adalah Go yang digunakan untuk melakukan pemrograman konkuren atau paralel. Goroutine merupakan sebuah fungsi yang dijalankan secara independen dan tidak diblokir oleh fungsi-fungsi lain di dalam program.Didalamnya kita di berikan materi beserta contoh penggunaan hingga ke mutex
