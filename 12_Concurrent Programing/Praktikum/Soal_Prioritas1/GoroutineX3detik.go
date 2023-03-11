@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func printMultiples(x int) {
+func KelipatanBilangan(x int) {
 	for i := 1; ; i++ {
 		if i%x == 0 {
 			fmt.Printf("%d ", i)
@@ -15,7 +15,7 @@ func printMultiples(x int) {
 }
 
 func main() {
-	go printMultiples(4)
+	go KelipatanBilangan(4)
 	var input string
 	fmt.Scanln(&input)
 }

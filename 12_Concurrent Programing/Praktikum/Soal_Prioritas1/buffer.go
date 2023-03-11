@@ -5,7 +5,7 @@ import (
 	"time"
 )
 
-func printMultiplesOfThree(n int) {
+func Buffer(n int) {
 	// membuat buffer channel dengan kapasitas 10
 	c := make(chan int, 10)
 
@@ -27,5 +27,5 @@ func printMultiplesOfThree(n int) {
 
 func main() {
 	// mencetak 10 bilangan kelipatan 3
-	printMultiplesOfThree(10)
+	Buffer(10)
 }
