@@ -1,28 +1,28 @@
 package main
 
-type kendaraan struct { //lebih baik pada struct jika tidak spasi setiap yang seharusnya spasi di beri huruf besar
-	totalroda       int
-	kecepatanperjam int
+type Kendaraan struct { //lebih baik pada struct jika tidak spasi setiap yang seharusnya spasi di beri huruf besar
+	TotalRoda       int
+	KecepatanPerJam int
 }
 
-type mobil struct {
-	kendaraan
+type Mobil struct {
+	Kendaraan
 }
 
-func (m *mobil) berjalan() {
+func (m *Mobil) berjalan() {
 	m.tambahkecepatan(10) //jelaskan 10 itu apa
 }
 
-func (m *mobil) tambahkecepatan(kecepatanbaru int) { //pada parameter var lebih baik menggunakan kata yang lebih jelas agar mudah di ingat untuk di panggil
-	m.kecepatanperjam = m.kecepatanperjam + kecepatanbaru //tentukan satuan
+func (m *Mobil) tambahkecepatan(KecepatanBaru int) { //pada parameter var lebih baik menggunakan kata yang lebih jelas agar mudah di ingat untuk di panggil
+	m.KecepatanPerJam = m.KecepatanPerJam + KecepatanBaru //tentukan satuan
 }
 
 func main() { //lebih baik pada struct jika tidak spasi setiap yang seharusnya spasi di beri huruf besar
-	mobilcepat := mobil{}
-	mobilcepat.berjalan()
-	mobilcepat.berjalan()
-	mobilcepat.berjalan()
+	MobilCepat := Mobil{}
+	MobilCepat.berjalan()
+	MobilCepat.berjalan()
+	MobilCepat.berjalan()
 
-	mobillamban := mobil{}
-	mobillamban.berjalan()
+	MobilLamban := Mobil{}
+	MobilLamban.berjalan()
 }
