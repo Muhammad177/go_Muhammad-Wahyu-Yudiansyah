@@ -2,8 +2,8 @@ package main
 
 type user struct {
 	id       int
-	username int
-	password int
+	username int//Rubah menjadi string
+	password int//Rubah menjadi string
 }
 
 type userservice struct {//selanjutnya dalam penerapan code clean yaitu code yang mudah di pahami oleh orang lain pada masa datang tidak diterapkan karna code clean berarti kejelasan di struct baguan user service di gunakan var t untuk slice user tidak jelas apa maksud dari t

@@ -4,8 +4,8 @@ import "fmt"
 
 type user struct {
 	id       int
-	username string
-	password string
+	username string //Rubah menjadi string
+	password string //Rubah menjadi string
 }
 
 type userservice struct { //selanjutnya dalam penerapan code clean yaitu code yang mudah di pahami oleh orang lain pada masa datang tidak diterapkan karna code clean berarti kejelasan di struct baguan user service di gunakan var t untuk slice user tidak jelas apa maksud dari t
