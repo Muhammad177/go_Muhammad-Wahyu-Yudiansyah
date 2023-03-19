@@ -127,15 +127,14 @@ SELECT COUNT(product_type_id) FROM products WHERE product_type_id = 2;
 -- Tampilkan semua field table product dan field name table product type yang saling berhubungan.
 
 SELECT* FROM products 
-JOIN product_types
+LEFT JOIN product_types
 on products.id = product_types.id;
 
 -- Tampilkan semua field table transaction, field name table product dan field name table user.
 
 SELECT* FROM transactions 
-inner JOIN products
+LEFT JOIN products
 on products.id = transactions.id;
-
 
 -- Buat function setelah data transaksi dihapus maka transaction detail terhapus juga dengan transaction id yang dimaksud.
 
