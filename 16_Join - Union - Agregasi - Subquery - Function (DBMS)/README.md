@@ -1,1 +1,3 @@
 16_Join - Union - Agregasi - Subquery - Function (DBMS)
+
+Materi mengenai Join yakni kombinasi record dari dua atau lebih tabel ada inner join,left join,right join.diberikan pengertian dari 3 tipe join tersebut.Pengertian union dan cara penggunaannya.fungsi agregasi dimana nilai beberapa baris dikelompokkan bersama untuk nilai ringkas tunggal contohnya MIN,MAX,SUM,AVG,COUNT,HAVING.Lalu Subquery digunakan mengembalikan nilai data akan digunakan dalam query utama.

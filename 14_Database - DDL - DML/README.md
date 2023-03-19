@@ -1,2 +1,3 @@
 14_Database - DDL - DML
 
+Penjelasan mengenai database diberikan contoh coloum account model dilanjutkan dengan penjelasan dari beberapa relationship database yakni one to one,one to many,many to many lalu diberikan contohnya.Pemberian contoh RDBMS yakni MySQL.Penjelasan perintah SQL DDL,DML,DCL.DDL digunakan untuk membuat mengedit data sedangkan DML untuk manipulasi data di dalam tabel seperti insert,select,update,delete.DML digunakan untuk memberikan situasi statement seperti like,between,and,or.
