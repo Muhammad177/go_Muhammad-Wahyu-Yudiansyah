@@ -25,8 +25,7 @@ curl https://gist.githubusercontent.com/tegarimansyah/e91f335753ab2c7fb128157796
 
 #memasukkan nama user uname -a ke about_this_laptop
 
-echo "My_username : $(whoami)" > "$1 at $d"/my_system_info/about_this_laptop.txt
-echo "Host : $(uname -a): $d" > "$1 at $d"/my_system_info/about_this_laptop.txt
+echo "My_username : $(whoami)" > "$1 at $d"/my_system_info/about_this_laptop.txt "Host : $(uname -a): $d" > "$1 at $d"/my_system_info/about_this_laptop.txt
 
 #memasukkan ping google ke internet_connection.txt
 
