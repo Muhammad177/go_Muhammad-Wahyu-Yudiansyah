@@ -1,0 +1,3 @@
+20_Intro Echo Golang
+
+Echo merupakan minimalis framework tetapi dapat di perluas dengan di setting pada GO go get github.com/labstack/echo/v4 dengan basic routing controller yang akan di panggil melalui localhost dengan port yang ditentukan untuk menampilkan data simulasi pada postman dengan method yang dipilih serta text jsonnya ada beberapa cara yakni url params,query params untuk method get dan post menggunakan form value
