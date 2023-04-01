@@ -1,0 +1,3 @@
+21_ORM and Code Structure (MVC)
+
+ORM adalah objek relational mapping yang digunakan untuk convert data menggunakan sistem oop dengan menggunakan framework gorm.Dengan ini kita dimudahkan untuk mengelolad data.Matri ini mengajarkan pembuatan database menggunakan migrate yang dimulai dari inisialisasi database menggunakan driver mysql.lalu membuat controller dari fungsi yang akan digunakan.Selanjutnya menggunakan MVC (model view controller) agar code lebih mudah di pahami karena di kelompokkan.
