@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/prioritas1/database"
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/prioritas1/models"
+	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/models"
 	"net/http"
 	"strconv"
 

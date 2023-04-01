@@ -1,7 +1,7 @@
 package routes
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/prioritas1/controller"
+	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/controller"
 
 	"github.com/labstack/echo/v4"
 )

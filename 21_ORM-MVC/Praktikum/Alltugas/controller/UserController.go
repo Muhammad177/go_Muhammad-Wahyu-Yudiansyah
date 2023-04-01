@@ -1,11 +1,11 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/prioritas1/database"
+	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/database"
 	"net/http"
 	"strconv"
 
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/prioritas1/models"
+	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/models"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/labstack/echo/v4"
