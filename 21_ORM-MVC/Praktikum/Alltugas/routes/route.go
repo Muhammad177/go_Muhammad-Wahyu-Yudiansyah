@@ -21,6 +21,12 @@ func New() *echo.Echo {
 	e.GET("/books/:id", controller.GetBookController)
 	e.DELETE("/books/:id", controller.DeleteBookController)
 	e.PUT("/books/:id", controller.UpdateBookController)
+	// routing with query parameter
+	e.GET("/blogs", controller.GetBlogsController)
+	e.POST("/blogs", controller.CreateBlogController)
+	e.GET("/blogs/:id", controller.GetBlogController)
+	e.DELETE("/blogs/:id", controller.DeleteBlogController)
+	e.PUT("/blogs/:id", controller.UpdateBlogController)
 	// start the server, and log if it fails
 	e.Logger.Fatal(e.Start(":8000"))
 	return e

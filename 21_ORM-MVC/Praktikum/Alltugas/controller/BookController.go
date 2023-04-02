@@ -30,12 +30,12 @@ func GetBooksController(c echo.Context) error {
 
 // get book by id
 func GetBookController(c echo.Context) error {
-	userId, err := strconv.Atoi(c.Param("id"))
+	bookId, err := strconv.Atoi(c.Param("id"))
 	if err != nil {
 		return c.JSON(http.StatusBadRequest, "invalid Book ID")
 	}
 
-	if err := database.DB.First(&users, userId).Error; err != nil {
+	if err := database.DB.First(&books, bookId).Error; err != nil {
 		return c.JSON(http.StatusBadRequest, err.Error())
 	}
 
@@ -45,7 +45,7 @@ func GetBookController(c echo.Context) error {
 	})
 }
 
-// delete user by id
+// delete book by id
 func DeleteBookController(c echo.Context) error {
 	id := c.Param("id")
 	var books models.Book
@@ -62,7 +62,7 @@ func DeleteBookController(c echo.Context) error {
 	})
 }
 
-// update user by id
+// update book by id
 func UpdateBookController(c echo.Context) error {
 	id := c.Param("id")
 
@@ -88,7 +88,7 @@ func UpdateBookController(c echo.Context) error {
 	})
 }
 
-// create new user
+// create new book
 func CreateBookController(c echo.Context) error {
 	books := models.Book{}
 	c.Bind(&books)
