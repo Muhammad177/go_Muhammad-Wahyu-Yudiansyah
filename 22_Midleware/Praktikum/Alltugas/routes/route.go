@@ -13,7 +13,7 @@ func New() *echo.Echo {
 	e := echo.New()
 	midleware.LogMiddleware(e)
 	// routing with query parameter
-
+	e.POST("/users", controller.CreateUserController)
 	e.POST("/login", controller.LoginUserController)
 	// routing with query parameter
 	e.GET("/blogs", controller.GetBlogsController)
