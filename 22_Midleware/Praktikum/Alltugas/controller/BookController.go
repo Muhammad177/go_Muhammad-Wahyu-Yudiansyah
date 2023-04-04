@@ -1,12 +1,13 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/database"
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/models"
+	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/models"
 	"net/http"
 	"strconv"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
+	"gorm.io/gorm"
 
 	"github.com/labstack/echo/v4"
 )
@@ -23,7 +24,7 @@ func GetBooksController(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"messages": "success get all books",
-		"Buku":    books,
+		"users":    books,
 	})
 }
 
@@ -67,6 +68,9 @@ func UpdateBookController(c echo.Context) error {
 
 	var book models.Book
 	if err := database.DB.Model(&models.Book{}).Where("id = ?", id).First(&book).Error; err != nil {
+		if err == gorm.ErrRecordNotFound {
+			return echo.NewHTTPError(http.StatusNotFound, "Book not found")
+		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "Database error")
 	}
 

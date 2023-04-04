@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/database"
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/models"
+	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/models"
 	"net/http"
 	"strconv"
 
@@ -24,7 +24,7 @@ func GetBlogsController(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"messages": "success get all blogs",
-		"Blogs":    blogs,
+		"users":    blogs,
 	})
 }
 
@@ -41,7 +41,7 @@ func GetBlogController(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"messages": "success get blog by id",
-		"Blog":     blogs,
+		"Buku":     blogs,
 	})
 }
 
@@ -58,7 +58,7 @@ func DeleteBlogController(c echo.Context) error {
 	}
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"message": "success delete blog by id",
-		"Blog":    blogs,
+		"Buku":    blogs,
 	})
 }
 
@@ -99,6 +99,6 @@ func CreateBlogController(c echo.Context) error {
 
 	return c.JSON(http.StatusOK, map[string]interface{}{
 		"message": "success create new book",
-		"Blog":    blogs,
+		"Buku":    blogs,
 	})
 }
