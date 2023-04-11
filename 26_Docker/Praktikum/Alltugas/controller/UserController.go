@@ -1,14 +1,16 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/26_Docker/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/26_Docker/Praktikum/Alltugas/midleware"
 	"net/http"
 	"strconv"
 
-	"go_Muhammad-Wahyu-Yudiansyah/21_ORM-MVC/Praktikum/Alltugas/models"
+	"go_Muhammad-Wahyu-Yudiansyah/26_Docker/Praktikum/Alltugas/models"
 
 	_ "github.com/jinzhu/gorm/dialects/mysql"
 	"github.com/labstack/echo/v4"
+	"gorm.io/gorm"
 )
 
 var users []models.User
@@ -69,6 +71,9 @@ func UpdateUserController(c echo.Context) error {
 
 	var user models.User
 	if err := database.DB.Model(&models.User{}).Where("id = ?", id).First(&user).Error; err != nil {
+		if err == gorm.ErrRecordNotFound {
+			return echo.NewHTTPError(http.StatusNotFound, "User not found")
+		}
 		return echo.NewHTTPError(http.StatusInternalServerError, "Database error")
 	}
 
@@ -99,4 +104,32 @@ func CreateUserController(c echo.Context) error {
 		"message": "success create new user",
 		"user":    user,
 	})
+}
+
+func LoginUserController(c echo.Context) error {
+	user := models.User{}
+	c.Bind(&user)
+	if err := database.DB.Where("email = ? AND password = ?", user.Email, user.Password).First(&user).Error; err != nil {
+		return echo.NewHTTPError(http.StatusBadRequest, map[string]interface{}{
+			"message": "Failed Login",
+			"error":   err.Error(),
+		})
+	}
+
+	token, err := midleware.CreateToken(int(user.ID), user.Name)
+
+	if err != nil {
+		return c.JSON(http.StatusInternalServerError, map[string]interface{}{
+			"message": "Failed Login",
+			"error":   err.Error(),
+		})
+	}
+	usersResponse := models.UserResponse{int(user.ID), user.Name, user.Email, token}
+
+
+	return c.JSON(http.StatusOK, map[string]interface{}{
+		"message": "success create new user",
+		"user":    usersResponse,
+	})
+
 }

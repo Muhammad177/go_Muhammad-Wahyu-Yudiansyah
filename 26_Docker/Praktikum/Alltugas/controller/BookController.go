@@ -1,9 +1,9 @@
 package controller
 
 import (
-	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/database"
+	"go_Muhammad-Wahyu-Yudiansyah/26_Docker/Praktikum/Alltugas/database"
 
-	"go_Muhammad-Wahyu-Yudiansyah/22_Midleware/Praktikum/Alltugas/models"
+	"go_Muhammad-Wahyu-Yudiansyah/26_Docker/Praktikum/Alltugas/models"
 	"net/http"
 	"strconv"
 
