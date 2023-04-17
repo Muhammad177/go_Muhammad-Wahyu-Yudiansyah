@@ -16,7 +16,6 @@ type User struct {
 
 var users []User
 
-
 // get all users
 func GetUsersController(c echo.Context) error {
 	return c.JSON(http.StatusOK, map[string]interface{}{

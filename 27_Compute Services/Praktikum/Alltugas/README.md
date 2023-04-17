@@ -1,0 +1,3 @@
+27_Compute Services
+
+System & software Deployment adalah kegiatan yang bertujuan untuk menyebarkan aplikasi/produk yang telah dikerjakan pengembang.Strateginya antara lain Big-Bang,Rollout,Blue/Green,Canary.Pada Praktek Menggunakan AWS EC2 dan RDS.EC2 bertujuan untuk Menyediakan server virtual: AWS EC2 memungkinkan untuk membuat server virtual di awan dengan mudah dapat mengkonfigurasi server sesuai dengan kebutuhan.Sedangkan pada bagian RDS untuk melakukan setting database
